@@ -10,6 +10,8 @@
                 "-fdiagnostics-color=always",
                 "-g",
                 "${file}",
+                "-I/usr/local/include/mongocxx/v_noabi",
+                "-I/usr/local/include/bsoncxx/v_noabi",
                 "/home/janus/misc-soft/yahoo-finance/src/quote.cpp",
                 "/home/janus/misc-soft/yahoo-finance/src/curl_utils.cpp",
                 "-lcurl",
