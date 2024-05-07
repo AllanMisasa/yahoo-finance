@@ -12,14 +12,16 @@
                 "${file}",
                 "-I/usr/local/include/mongocxx/v_noabi",
                 "-I/usr/local/include/bsoncxx/v_noabi",
-                "-L/usr/local/lib -lmongocxx -lbsoncxx",
+                "-L/usr/local/lib",
+                "-lmongocxx",
+                "-lbsoncxx",
                 "/home/janus/misc-soft/yahoo-finance/src/quote.cpp",
                 "/home/janus/misc-soft/yahoo-finance/src/curl_utils.cpp",
                 "-lcurl",
                 "/home/janus/misc-soft/yahoo-finance/src/time_utils.cpp",
                 "/home/janus/misc-soft/yahoo-finance/src/spot.cpp",
                 "-o",
-                "${fileDirname}/${fileBasenameNoExtension}"
+                "${fileDirname}/${fileBasenameNoExtension}",
             ],
             "options": {
                 "cwd": "${fileDirname}"
