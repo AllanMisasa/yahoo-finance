@@ -11,6 +11,10 @@
 #include <mongocxx/uri.hpp>
 
 int main() {
+    mongocxx::instance instance{}; // This should be done only once.
+    mongocxx::uri uri("mongodb://localhost:27017");
+    mongocxx::client client(uri);
+
     Quote *snp500 = new Quote("^GSPC");
 
     snp500->getHistoricalSpots("2024-01-01", "2024-01-31", "1d");
