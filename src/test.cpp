@@ -11,6 +11,7 @@
 #include <mongocxx/uri.hpp>
 
 int main() {
+    // sudo /sbin/ldconfig -v was needed to update shared object links
     mongocxx::instance instance{};
     mongocxx::uri uri("mongodb://localhost:27017");
     mongocxx::client client(uri);

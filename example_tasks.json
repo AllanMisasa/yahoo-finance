@@ -21,7 +21,7 @@
                 "/home/janus/misc-soft/yahoo-finance/src/time_utils.cpp",
                 "/home/janus/misc-soft/yahoo-finance/src/spot.cpp",
                 "-o",
-                "${fileDirname}/${fileBasenameNoExtension}",
+                "${fileDirname}/${fileBasenameNoExtension}"
             ],
             "options": {
                 "cwd": "${fileDirname}"
