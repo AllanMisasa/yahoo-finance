@@ -74,6 +74,7 @@ public:
                                  std::time_t period2,
                                  const char *interval);
 
+
     /**
      * @brief Fill spots vector on a period
      * @param period1 Begining date (POSIX timestamp)
@@ -83,9 +84,11 @@ public:
      *          weekly "1wk"
      *          annual "1y"
      */
+ 
     void getHistoricalSpots(std::time_t period1,
                             std::time_t period2,
                             const char *interval);
+
 
     /**
      * @brief Fill spots vector on a period
